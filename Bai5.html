@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+</head>
+<body>
+<!--Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ-->
+<script>
+    var dToan = parseFloat(prompt("Mời nhập vào điểm kiểm tra TOÁN của học sinh"));
+    var dLy = parseFloat(prompt("Mời nhập vào điểm kiểm tra LÝ của học sinh"));
+    var dHoa = parseFloat(prompt("Mời nhập vào điểm kiểm tra HÓA của học sinh"));
+    var dtb = (dToan +dLy +dHoa) / 3;
+    if (dtb < 3.5) {
+        alert("F");
+    }else if (dtb < 5) {
+        alert("D");
+    }else if (dtb < 6.5) {
+        alert("C");
+    }else if (dtb < 8) {
+        alert("B");
+    }else if (dtb >= 8) {
+        alert("A");
+    }
+</script>
+</body>
+</html>
